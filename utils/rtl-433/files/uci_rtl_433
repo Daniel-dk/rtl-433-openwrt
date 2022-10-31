@@ -7,3 +7,4 @@ config rtl_433
 	list demodulators	"20"
 	list output		"json"
 	option enabled		1
+	option config_file	"/etc/rtl_433/rtl_433.conf"
