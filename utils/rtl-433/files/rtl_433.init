@@ -60,7 +60,8 @@ validate_rtl_433_section()
 		'samples:uinteger' \
 		'units:or("si", "native", "customary")' \
 		'utc:bool' \
-		'output:string'
+		'output:string' \
+		'config_file:string'
 
 	return $?
 }
@@ -101,6 +102,7 @@ load_rtl_433() {
 	append_arg  "$cfg" units "-C"
 	append_bool "$cfg" utc "-U"
 	append_list "$cfg" output "-F"
+	append_list "$cfg" config_file "-c"
 
 	procd_set_param stdout 1
 	procd_set_param stderr 0
