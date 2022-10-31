@@ -1,9 +1,10 @@
 config rtl_433
 	option device		0
 	option respawn_interval	300
-	option utc		0
-	option units		si
-	option ppm_error	46
-	list demodulators	"20"
-	list output		"json"
+#	option utc		0
+#	option units		si
+#	option ppm_error	46
+#	list demodulators	"20"
+#	list output		"json"
 	option enabled		1
+	list config_file	"/etc/rtl_433/rtl_433.conf"
